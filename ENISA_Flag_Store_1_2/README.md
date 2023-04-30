@@ -40,3 +40,13 @@ func getData(user User) (
 ```
 
 Returning back to the code, we have to analyse it. All the sql requests in the .go file are prepared, except one in the getData function... Does that mean that we could exploit it ? 👀  
+By analyzing the code, we understand that getData is called in show_flags, which is called itself when we go to the /flags section in the website. So the plan is to inject what we want in the country field, which can be modified only once : during the signup !  
+
+![1-1.5](1-1.5.png) 
+![1-2](1-2.png) 
+
+The problem is that we're forced to select a country, so we can't inject our payload. But using BurpSuite, it is possible !
+
+![1-3](1-3.png)  
+
+Then we go to /flags, and we see the flag appearing at the top ! (if i didn't inject the payload it would print only the french flags related to my token and not this one)
