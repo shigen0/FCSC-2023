@@ -1,3 +1,5 @@
+# Reconnaissance
+
 Here's the challenge, a .go file is given too with the link to the website :  
 
 ![1-0](1-0.png)  
@@ -41,6 +43,8 @@ func getData(user User) (
 
 Returning back to the code, we have to analyse it. All the sql requests in the .go file are prepared, except one in the getData function... Does that mean that we could exploit it ? 👀  
 By analyzing the code, we understand that getData is called in show_flags, which is called itself when we go to the /flags section in the website. So the plan is to inject what we want in the country field, which can be modified only once : during the signup !  
+
+# Exploitation
 
 ![1-1.5](1-1.5.png) 
 ![1-2](1-2.png) 
