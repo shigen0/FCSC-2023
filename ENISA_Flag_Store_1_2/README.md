@@ -49,4 +49,4 @@ The problem is that we're forced to select a country, so we can't inject our pay
 
 ![1-3](1-3.png)  
 
-Then we go to /flags, and we see the flag appearing at the top ! (if i didn't inject the payload it would print only the french flags related to my token and not this one)
+Then we go to /flags, and we see the flag appearing at the top ! (if i didn't inject the payload it would print only the french flags related to my token and not this one) 
