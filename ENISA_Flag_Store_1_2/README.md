@@ -46,7 +46,9 @@ By analyzing the code, we understand that getData is called in show_flags, which
 
 # Exploitation
 
-![1-1.5](1-1.5.png) 
+![1-1.5](1-1.5.png)  
+
+
 ![1-2](1-2.png) 
 
 The problem is that we're forced to select a country, so we can't inject our payload. But using BurpSuite, it is possible !
