@@ -1,8 +1,10 @@
 # Reconnaissance
 
-On arrive face à cette page
+Here's the first page
 
 ![1-1](lent1.png)  
+
+# Exploitation
 
 The first thing that we must check is the source code, we see a reference to another page, let's go to it 
 
